@@ -1,0 +1,29 @@
+{% extends "blog/base.html" %}
+
+{% block content %}
+    {% for post in posts %}
+        <div class="card border-dark mb-3">
+            <div class="card-header">
+                <img
+                    class="rounded-circle article-img mr-3"
+                    style="width: 60px; height: 60px;"
+                    src="{{ post.author.profile.image.url }}"
+                >
+                <a href="#" target="_blank">
+                    <strong>{{ post.author }}</strong>
+                </a>
+                 on {{ post.date_posted | date:"F d, Y" }}
+            </div>
+            <div class="card-body text-dark">
+                <h5 class="card-title">
+                    <a href="{% url 'post-detail' post.id %}">
+                        {{ post.title }}
+                    </a>
+                </h5>
+                <p class="card-text">
+                    {{  post.content  }}
+                </p>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock content%}

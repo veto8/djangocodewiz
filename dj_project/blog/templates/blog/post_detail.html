@@ -1,0 +1,23 @@
+{% extends "blog/base.html" %}
+
+{% block content %}
+<div class="card border-dark mb-3">
+  <div class="card-header">
+    <img
+      class="rounded-circle article-img mr-3"
+      style="width: 60px; height: 60px"
+      src="{{ object.author.profile.image.url }}"
+    />
+    <a href="#" target="_blank">
+      <strong>{{ object.author }}</strong>
+    </a>
+    on {{ object.date_posted | date:"F d, Y" }}
+  </div>
+  <div class="card-body text-dark">
+    <h2 class="card-title">{{ object.title }}</h2>
+    <p class="card-text">
+      {{ object.content }}
+    </p>
+  </div>
+</div>
+{% endblock content%}
