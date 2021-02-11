@@ -12,9 +12,7 @@
             />
         </div>
         <div class="col-md-9">
-            <a href="#" target="_blank">
-                <strong>{{ object.author }}</strong>
-            </a>
+            <a href="{% url 'user-post' object.author.username %}"><strong>{{ object.author }}</strong></a>
             on {{ object.date_posted | date:"F d, Y" }}
             {% if object.author == user %}
             <div>
