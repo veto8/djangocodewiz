@@ -28,17 +28,20 @@
   <body>
 
   <nav class="navbar navbar-expand-md navbar-light py-3">
-    <a class="navbar-brand" href="{% url 'blog-home' %}">
+    <a class="navbar-brand" href="{% url 'home' %}">
         <img id="wizz-logo" src="{% static 'wizard.png' %}" alt="">
         CodeWizz
     </a>
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="{% url 'blog-home' %}">Home</a>
+          <a class="nav-link" href="{% url 'home' %}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'blog-about' %}">About</a>
+          <a class="nav-link" href="{% url 'about-me' %}">About me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'blog-home' %}">Blog</a>
         </li>
       </ul>
       <div class="navbar-nav">
