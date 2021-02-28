@@ -24,9 +24,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'xa8=qs1$*4li4+br@r5*1j26_5a!*h()h+h88gb)#!k+s*%0be'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+#DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['www.codewizz.org']
 
 
 # Application definition
