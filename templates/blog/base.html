@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
     {% load static %}
-    <link rel="stylesheet" href="{% static 'blog/main.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'blog/css/main.css' %}" type="text/css">
 
     {% if title %}
     <title>Django Blog - {{ title }}</title>
@@ -28,7 +28,7 @@
 
   <nav class="navbar navbar-expand-md navbar-light  mb-4 py-3">
     <a class="navbar-brand" href="{% url 'home' %}">
-        <img id="wizz-logo" src="{% static 'wizard.png' %}" alt="">
+        <img id="wizz-logo" src="{% static 'blog/wizard.png' %}" alt="">
         CodeWizz
     </a>
     <div class="collapse navbar-collapse" id="navbarCollapse">
