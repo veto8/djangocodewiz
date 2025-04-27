@@ -28,7 +28,12 @@ SECRET_KEY = 'xa8=qs1$*4li4+br@r5*1j26_5a!*h()h+h88gb)#!k+s*%0be'
 DEBUG = True
 # DEBUG = False
 
-ALLOWED_HOSTS = ['codewizz.org' ,'www.codewizz.org', 'localhost']
+ALLOWED_HOSTS = ['codewizz.org'
+                 ,'www.codewizz.org'
+                 ,'127.0.0.1'
+                 ,'5.223.45.29'                 
+                 ,'asia.draconarius.com'                 
+                 , 'localhost']
 
 
 # Application definition
